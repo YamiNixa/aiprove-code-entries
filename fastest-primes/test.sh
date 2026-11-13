@@ -1,6 +1,7 @@
 #!/bin/bash
 # Public samples + benchmark for fastest-primes/primes.js
 set -e
+cd "$(dirname "$0")"
 for n in 10 100 1000 100000 1000000 5000000; do
   echo -n "N=$n -> "
   echo $n | node primes.js
